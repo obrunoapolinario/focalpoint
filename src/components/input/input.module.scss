@@ -1,0 +1,21 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
+
+.input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $tertiary-color;
+    border-radius: 8px;
+    font-size: $font-size-base;
+    color: $black-color;
+    background-color: $white-color;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 2px #1018280D;
+    }
+    &::placeholder {
+        color: $input-placeholder-color;
+    }
+}

@@ -6,9 +6,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    margin: 1rem 0;
     border: 1px dashed $tertiary-color;
-    border-radius: 5px;
+    border-radius: 8px;
 
     .task__completed {
         text-decoration: line-through;
@@ -51,13 +50,27 @@
         border-color: $primary-color;
     }
 
-    /*.task__completed_checkbox:focus {
-        outline: max(2px, 0.15em) solid currentColor;
-        outline-offset: max(2px, 0.15em);
-    }*/
-
     .task__completed_checkbox:disabled {
         color: $disabled-color;
         cursor: not-allowed;
-      }
+    }
+}
+
+.task__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid $primary-card-border-color;
+    border-radius: 16px;
+    box-shadow: 0px 1px 2px 0px $primary-card-shadow-color;
+
+    .task__container__title {
+        font-size: $font-size-base;
+        font-weight: 400;
+        color: $primary-text-muted-color;
+        align-self: center;
+    }
 }

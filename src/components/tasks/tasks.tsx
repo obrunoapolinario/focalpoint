@@ -15,3 +15,17 @@ export const Task: React.FC<TaskProps> = ({ title, completed }) => {
         </div>
     );
 }
+
+export const TaskContainer: React.FC<{children: React.ReactNode}> = ({ children }) => {
+    return (
+        <div className={styles.task__container}>
+            {children}
+        </div>
+    );
+}
+
+export const TaskContainerTitle: React.FC<{title: string}> = ({ title }) => {
+    return (
+        <h2 className={styles.task__container__title}>{title}</h2>
+    );
+}

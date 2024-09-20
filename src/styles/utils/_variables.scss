@@ -7,11 +7,23 @@ $disabled-color: transparentize($black-color, 0.38);
 $primary-color: #0796D3;
 $secondary-color: #A0DCF6;
 $tertiary-color: #D7DDE9;
+
 $primary-text-muted-color: #0000008A;
 
+$primary-card-border-color: #EAECF0;
+$primary-card-shadow-color: #1018280D;
+
+$primary-button-color: #E7EEFB;
+$secondary-button-color-strong: #0796D3;
+$secondary-button-color-weak: #A0DCF6;
+$danger-button-color-strong: #D30707;
+$danger-button-color-weak: #F05353;
+
+$input-placeholder-color: #0000008F;
+
 // Tamanhos de fonte
-$font-size-base: 18px;
-$font-size-large: 32px;
+$font-size-base: 16px;
+$font-size-large: 24px;
 $font-size-small: 14px;
 
 // Breakpoints

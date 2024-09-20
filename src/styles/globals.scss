@@ -3,10 +3,12 @@
 @import 'utils/mixins';
 
 // Estilos globais aqui
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   font-size: $font-size-base;
   line-height: 1.5;
-  color: #333;
   padding: 24px;
 }

@@ -1,0 +1,7 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
+
+.label {
+    font-size: $font-size-base;
+    letter-spacing: -2%;
+}

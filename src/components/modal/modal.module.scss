@@ -1,0 +1,27 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white-color;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal__content {
+    .modal__header {
+        .modal__header_title {
+            font-size: $font-size-large;
+            font-weight: 500;
+            color: $black-color;
+        }
+    }
+    .modal__body{
+        
+    }
+}

@@ -1,0 +1,22 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
+
+.button {
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 0;
+    
+    &.button--primary {
+        background: linear-gradient(90deg, $secondary-button-color-strong 0%, $secondary-button-color-weak 68.65%);
+    }
+
+    &.button--ghost {
+        background-color: $primary-button-color;
+        color: $black-color;
+    }
+
+    &.button--danger {
+        background: linear-gradient(90deg, $danger-button-color-strong 0%, $danger-button-color-weak 68.65%);
+    }
+}
