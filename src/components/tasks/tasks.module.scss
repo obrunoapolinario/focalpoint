@@ -1,0 +1,63 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px dashed $tertiary-color;
+    border-radius: 5px;
+
+    .task__completed {
+        text-decoration: line-through;
+    }
+
+    .task__completed_checkbox {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: $white-color;
+        margin: 0;
+        font: inherit;
+        color: currentColor;
+        width: 24px;
+        height: 24px;
+        border: 0.15em solid $tertiary-color;
+        border-radius: 0.15em;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .task__completed_checkbox::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em $primary-color;
+        transform-origin: bottom left;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    }
+
+    .task__completed_checkbox:checked::before {
+        transform: scale(1);
+    }
+
+    .task__completed_checkbox:checked {
+        background-color: $secondary-color;
+        border-color: $primary-color;
+    }
+
+    /*.task__completed_checkbox:focus {
+        outline: max(2px, 0.15em) solid currentColor;
+        outline-offset: max(2px, 0.15em);
+    }*/
+
+    .task__completed_checkbox:disabled {
+        color: $disabled-color;
+        cursor: not-allowed;
+      }
+}

@@ -1,0 +1,12 @@
+@import 'utils/normalize.css';
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// Estilos globais aqui
+body {
+  font-family: Arial, sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  color: #333;
+  padding: 24px;
+}

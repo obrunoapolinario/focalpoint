@@ -1,0 +1,17 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
+
+.header {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-weight: 500;
+        color: $black-color;
+
+        .content__details {
+            font-weight: 400;
+            color: $primary-text-muted-color;
+        }
+    }
+}

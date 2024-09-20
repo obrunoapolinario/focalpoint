@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+// Cores
+$black-color: #000000;
+$white-color: #FFFFFF;
+$disabled-color: transparentize($black-color, 0.38);
+$primary-color: #0796D3;
+$secondary-color: #A0DCF6;
+$tertiary-color: #D7DDE9;
+$primary-text-muted-color: #0000008A;
+
+// Tamanhos de fonte
+$font-size-base: 18px;
+$font-size-large: 32px;
+$font-size-small: 14px;
+
+// Breakpoints
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;
