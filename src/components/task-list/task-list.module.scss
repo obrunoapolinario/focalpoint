@@ -1,0 +1,13 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
+
+.task_list__container {
+    @include respond-to('large') {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+.task_list__message {
+    text-align: center;
+}

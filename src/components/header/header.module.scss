@@ -2,16 +2,29 @@
 @import '../../styles/utils/variables';
 
 .header {
+    border-bottom: 1px solid $tertiary-color;
+    margin-bottom: 24px;
     .content {
         display: flex;
         flex-direction: column;
         gap: 8px;
         font-weight: 500;
         color: $black-color;
+        font-size: $font-size-large;
+        letter-spacing: -2%;
+
+        @include respond-to('large') {
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         .content__details {
             font-weight: 400;
             color: $primary-text-muted-color;
+            font-size: $font-size-base;
+            
+            @include respond-to('large') {
+            }
         }
     }
 }
