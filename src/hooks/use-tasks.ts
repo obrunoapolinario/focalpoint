@@ -13,7 +13,6 @@ export const useTasks = () => {
     useEffect(() => {
         const loadTasks = () => {
             const storedTasks = localStorage.getItem('tasks');
-            console.log('Stored tasks from localStorage:', storedTasks);
             if (storedTasks) {
                 setTasks(JSON.parse(storedTasks));
             }
@@ -24,7 +23,6 @@ export const useTasks = () => {
 
     useEffect(() => {
         if (!isLoading) {
-            console.log('Saving tasks to localStorage:', tasks);
             localStorage.setItem('tasks', JSON.stringify(tasks));
         }
     }, [tasks, isLoading]);
@@ -36,8 +34,6 @@ export const useTasks = () => {
             completed: false,
         };
         setTasks(prevTasks => {
-            console.log('Previous tasks:', prevTasks);
-            console.log('Adding new task:', newTask);
             return [...prevTasks, newTask];
         });
     }, []);

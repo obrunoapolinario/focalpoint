@@ -49,8 +49,6 @@ export const TaskList: React.FC = () => {
         );
     }
     
-    console.log('Rendering TaskList. isLoading:', isLoading, 'tasks:', tasks);
-
     return (
         <TaskListContainer>
             <TaskContainer>

@@ -7,10 +7,9 @@ type ModalProps = {
     title: string
     children: React.ReactNode
     isOpen: boolean
-    onClose: () => void
 }
 
-export const Modal: React.FC<ModalProps> = ({ title, children, isOpen, onClose }) => {
+export const Modal: React.FC<ModalProps> = ({ title, children, isOpen }) => {
     if (!isOpen) return null;
 
     return (
@@ -89,7 +88,7 @@ export const ModalProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         <ModalContext.Provider value={{ registerModal, unregisterModal, openModal, closeModal }}>
             {children}
             {Object.entries(modals).map(([key, { title, content, isOpen }]) => (
-                <Modal key={key} title={title} isOpen={isOpen} onClose={() => closeModal(key)}>
+                <Modal key={key} title={title} isOpen={isOpen}>
                     {content}
                 </Modal>
             ))}
