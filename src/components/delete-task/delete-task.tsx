@@ -21,7 +21,7 @@ export const DeleteTask: React.FC<DeleteTaskProps> = ({ taskId }) => {
             <p>Você tem certeza que você deseja deletar essa tarefa?</p>
             <div className={styles.actions__container}>
                 <Button variant="danger" onClick={handleDelete}>Deletar</Button>
-                <Button onClick={() => closeModal('deleteTask')} variant='ghost'>Cancelar</Button>
+                <Button onClick={() => closeModal(`deleteTask-${taskId}`)} variant='ghost'>Cancelar</Button>
             </div>
         </div>
     );
